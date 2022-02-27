@@ -274,6 +274,7 @@
             <name>IFactory</name>
             <instance>default</instance>
         </interface>
+        <fqname>@2.2::IFactory/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.esepowermanager</name>
@@ -330,6 +331,8 @@
             <instance>slot1</instance>
             <instance>slot2</instance>
         </interface>
+        <fqname>@1.1::IDataConnection/slot1</fqname>
+        <fqname>@1.1::IDataConnection/slot2</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.data.iwlan</name>
@@ -349,6 +352,7 @@
             <name>ILinkLatency</name>
             <instance>default</instance>
         </interface>
+        <fqname>@1.0::ILinkLatency/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.dsp</name>
