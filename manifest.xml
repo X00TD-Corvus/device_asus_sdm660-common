@@ -143,8 +143,8 @@
         <transport>hwbinder</transport>
         <fqname>@1.2::ISap/slot1</fqname>
         <fqname>@1.2::ISap/slot2</fqname>
-        <fqname>@1.4::IRadio/slot1</fqname>
-        <fqname>@1.4::IRadio/slot2</fqname>
+        <fqname>@1.5::IRadio/slot1</fqname>
+        <fqname>@1.5::IRadio/slot2</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.radio.config</name>
@@ -420,6 +420,8 @@
             <instance>slot1</instance>
             <instance>slot2</instance>
         </interface>
+        <fqname>@1.0::IQcRilAudio/slot1</fqname>
+        <fqname>@1.0::IQcRilAudio/slot2</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.ims</name>
@@ -440,6 +442,8 @@
             <instance>UimLpa0</instance>
             <instance>UimLpa1</instance>
         </interface>
+        <fqname>@1.1::IUimLpa/UimLpa0</fqname>
+        <fqname>@1.1::IUimLpa/UimLpa1</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.qcrilhook</name>
@@ -450,6 +454,8 @@
             <instance>oemhook0</instance>
             <instance>oemhook1</instance>
         </interface>
+        <fqname>@1.0::IQtiOemHook/oemhook0</fqname>
+        <fqname>@1.0::IQtiOemHook/oemhook1</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.qtiradio</name>
@@ -460,6 +466,8 @@
             <instance>slot1</instance>
             <instance>slot2</instance>
         </interface>
+        <fqname>@1.0::IQtiRadio/slot1</fqname>
+        <fqname>@1.0::IQtiRadio/slot2</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.qtiradio</name>
@@ -470,6 +478,8 @@
             <instance>slot1</instance>
             <instance>slot2</instance>
         </interface>
+        <fqname>@2.4::IQtiRadio/slot1</fqname>
+        <fqname>@2.4::IQtiRadio/slot2</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.uim</name>
@@ -480,6 +490,8 @@
             <instance>Uim0</instance>
             <instance>Uim1</instance>
         </interface>
+        <fqname>@1.2::IUim/Uim0</fqname>
+        <fqname>@1.2::IUim/Uim1</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.uim_remote_client</name>
@@ -490,6 +502,8 @@
             <instance>uimRemoteClient0</instance>
             <instance>uimRemoteClient1</instance>
         </interface>
+        <fqname>@1.0::IUimRemoteServiceClient/uimRemoteClient0</fqname>
+        <fqname>@1.0::IUimRemoteServiceClient/uimRemoteClient1</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.uim_remote_server</name>
@@ -500,6 +514,8 @@
             <instance>uimRemoteServer0</instance>
             <instance>uimRemoteServer1</instance>
         </interface>
+        <fqname>@1.0::IUimRemoteServiceServer/uimRemoteServer0</fqname>
+        <fqname>@1.0::IUimRemoteServiceServer/uimRemoteServer1</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.soter</name>
