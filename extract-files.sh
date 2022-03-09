@@ -65,10 +65,6 @@ function blob_fixup() {
         "${PATCHELF}" --add-needed "libshim_wfd.so" "${2}"
         ;;
 
-    # remove android.hidl.base dependency
-    system/lib64/libfm-hci.so | system/lib64/libwfdnative.so | system/lib/libfm-hci.so | system/lib/libwfdnative.so)
-        "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
-        ;;
     esac
 }
 
