@@ -315,8 +315,8 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw \
-    android.hardware.media.c2@1.0.vendor \
-    libstagefright_enc_common
+    libstagefright_enc_common \
+    android.hardware.media.c2@1.0.vendor
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
