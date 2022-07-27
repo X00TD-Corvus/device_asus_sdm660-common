@@ -442,6 +442,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.asus_sdm660
 
+# Touch HAL
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch@1.0-service.X00TD
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic

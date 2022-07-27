@@ -1,18 +1,7 @@
-/*
- * Copyright (C) 2019 The LineageOS Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+//
+// Copyright (C) 2022 The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
 
 #define LOG_TAG "TouchscreenGestureService"
 
@@ -31,18 +20,13 @@ typedef struct {
 
 // id -> info
 const std::unordered_map<int32_t, GestureInfo> kGestureInfoMap = {
-    {0, {748, "Gesture C"}},
-    {1, {749, "Gesture e"}},
-    {2, {750, "Gesture M"}},
-    {3, {751, "Gesture O"}},
-    {4, {752, "Gesture S"}},
-    {5, {753, "Gesture V"}},
-    {6, {754, "Gesture W"}},
-    {7, {755, "Gesture Z"}},
-    {8, {756, "Gesture Swipe Up"}},
-    {9, {757, "Gesture Swipe Down"}},
-    {10, {758, "Gesture Swipe Left"}},
-    {11, {759, "Gesture Swipe Right"}},
+    {0, {0x2ec, "Gesture W"}},
+    {1, {0x2ed, "Gesture e"}},
+    {2, {0x2ee, "Gesture S"}},
+    {3, {0x2ef, "Gesture Z"}},
+    {4, {0x2f0, "Gesture C"}},
+    {5, {0x2f1, "Gesture V"}},
+    {6, {0x2f6, "Gesture Swipe Up"}},
 };
 }  // anonymous namespace
 
