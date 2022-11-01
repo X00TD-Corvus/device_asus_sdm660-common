@@ -75,14 +75,15 @@ BOARD_KERNEL_BASE        := 0x00000000
 BOARD_KERNEL_PAGESIZE    := 4096
 BOARD_KERNEL_IMAGE_NAME  := Image.gz-dtb
 
-ifeq ($(COMPILE_GCC),true)
-TARGET_KERNEL_NEW_GCC_COMPILE := true
-else
-TARGET_KERNEL_CLANG_COMPILE := true
-endif
 TARGET_KERNEL_SOURCE := kernel/asus/sdm660
-TARGET_KERNEL_ADDITIONAL_FLAGS := \
+KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-prelude/bin
+KERNEL_SUPPORTS_LLVM_TOOLS := true
+TARGET_KERNEL_ADDITIONAL_FLAGS := AS=llvm-as AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip
+TARGET_KERNEL_ADDITIONAL_FLAGS += \
     HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
+TARGET_KERNEL_LLVM_BINUTILS := true
+TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_CLANG_VERSION := prelude
 
 # GPS
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
