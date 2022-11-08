@@ -336,6 +336,9 @@ on property:persist.vendor.radio.atfwd.start=false
 on property:vendor.radio.atfwd.start=false
     stop vendor.atfwd
 
+# Enable suspend to RAM
+    write /sys/power/mem_sleep "deep"
+
 on property:vold.decrypt=trigger_restart_framework
     restart vendor.camera-provider-2-4
     restart vendor.audio-hal-2-0
