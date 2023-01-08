@@ -73,20 +73,14 @@ HWUI_COMPILE_FOR_PERF := true
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 androidboot.console=ttyMSM0
 BOARD_KERNEL_CMDLINE += earlycon=msm_serial_dm,0xc170000 androidboot.hardware=qcom
 BOARD_KERNEL_CMDLINE += user_debug=31 msm_rtb.filter=0x37 ehci-hcd.park=3
+BOARD_KERNEL_CMDLINE += sched_enable_hmp=1 sched_enable_power_aware=1
 BOARD_KERNEL_CMDLINE += service_locator.enable=1 swiotlb=1 loop.max_part=7
 #BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_BASE        := 0x00000000
 BOARD_KERNEL_PAGESIZE    := 4096
 BOARD_KERNEL_IMAGE_NAME  := Image.gz-dtb
 
-ifeq ($(COMPILE_GCC),true)
-TARGET_KERNEL_NEW_GCC_COMPILE := true
-else
-TARGET_KERNEL_CLANG_COMPILE := true
-endif
 TARGET_KERNEL_SOURCE := kernel/asus/sdm660
-TARGET_KERNEL_ADDITIONAL_FLAGS := \
-    HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 
 ifeq ($(CUSTOM_CLANG),true)
 TARGET_KERNEL_CLANG_VERSION := cosmic
