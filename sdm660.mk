@@ -152,6 +152,22 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@4.0-impl \
     android.frameworks.displayservice@1.0
 
+# Display interfaces
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.display.composer@1.0.vendor \
+    vendor.qti.hardware.display.composer@2.0.vendor \
+    vendor.qti.hardware.display.allocator-service \
+    vendor.qti.hardware.display.mapper@1.1.vendor \
+    vendor.qti.hardware.display.mapper@2.0.vendor \
+    vendor.qti.hardware.display.mapper@3.0.vendor \
+    vendor.qti.hardware.display.mapper@4.0.vendor \
+    vendor.qti.hardware.display.mapperextensions@1.0.vendor \
+    vendor.qti.hardware.display.mapperextensions@1.1.vendor
+
+# Doze mode
+PRODUCT_PACKAGES += \
+    Doze
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor \
@@ -550,6 +566,3 @@ PRODUCT_COPY_FILES += \
 #PRODUCT_PACKAGES += \
 #   ZenParts
 
-PRODUCT_BOOT_JARS += \
-    WfdCommon
-    
