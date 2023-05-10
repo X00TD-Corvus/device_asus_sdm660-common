@@ -53,5 +53,15 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
     <!-- The CPU temperature divider, if needed -->
     <integer name="config_cpuTempDivider" translatable="false">10</integer>
+    <!-- If not zero, limits the internal screen recorder's framerate to the set value. -->
+    <integer name="config_screenRecorderMaxFramerate">60</integer>
+    <!-- The default tiles to display in QuickSettings -->
+    <string name="quick_settings_tiles_default" translatable="false">
+        wifi,cell,bt,dnd,flashlight,rotation,battery,airplane,night,nfc,location
+    </string>
+
+    <!-- Whether the combined qs shows in status bar when true, the combined qs will not be available
+         if set it to false  -->
+    <bool name="flag_combined_qs_headers">false</bool>
 
 </resources>
