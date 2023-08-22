@@ -5,7 +5,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <string name="build_maintainer_summary">SonalSingh</string>
-    <string name="build_maintainer_telegram" translatable="false">https://t.me/SonalSingh18</string>
+    <string name="build_maintainer_summary">Rajat Kashyap</string>
+    <string name="build_maintainer_telegram" translatable="false">https://t.me/rajat_kashyap154</string>
     <string name="build_status_summary">Stable</string>
 </resources>
