@@ -102,16 +102,12 @@ BOARD_KERNEL_BASE        := 0x00000000
 BOARD_KERNEL_PAGESIZE    := 4096
 BOARD_KERNEL_IMAGE_NAME  := Image.gz-dtb
 
-TARGET_KERNEL_SOURCE := kernel/asus/sdm660
-
-ifeq ($(CUSTOM_CLANG),true)
-TARGET_KERNEL_CLANG_VERSION := cosmic
-TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-cosmic
-TARGET_KERNEL_ADDITIONAL_FLAGS := AR=llvm-ar AS=llvm-as NM=llvm-nm LD=ld.lld OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump OBJSIZE=llvm-size READELF=llvm-readelf STRIP=llvm-strip HOSTAR=llvm-ar HOSTAS=llvm-as HOSTNM=llvm-nm HOSTLD=ld.lld
+ifeq ($(COMPILE_GCC),true)
+TARGET_KERNEL_NEW_GCC_COMPILE := true
+else
+TARGET_KERNEL_CLANG_COMPILE := true
 endif
-
-TARGET_KERNEL_ADDITIONAL_FLAGS := \
-    HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
+TARGET_KERNEL_SOURCE := kernel/asus/sdm660
 
 # GPS
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
