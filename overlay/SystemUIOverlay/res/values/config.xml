@@ -10,7 +10,7 @@ met:
       notice, this list of conditions and the following disclaimer.
     * Redistributions in binary form must reproduce the above
       copyright notice, this list of conditions and the following
-      disclaimer in the documentation and/or other materials provided
+      Disclaimer in the documentation and/or other materials provided
       with the distribution.
     * Neither the name of The Linux Foundation nor the names of its
       contributors may be used to endorse or promote products derived
@@ -33,13 +33,13 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <!-- Enable doze mode -->
     <bool name="doze_display_state_supported">true</bool>
 
-    <!-- Doze: should the pickup sensor be used as a pulse signal? -->
+    <!-- Doze: Should the pickup sensor be used as a pulse signal? -->
     <bool name="doze_pulse_on_pick_up">true</bool>
 
     <!-- Doze: when to pulse after a buzzworthy notification arrives -->
     <string name="doze_pulse_schedule" translatable="false">10s,30s,60s,180s</string>
 
-    <!-- Doze: check proximity sensor before pulsing from intent? -->
+    <!-- Doze: Check the proximity sensor before pulsing from intent. -->
     <bool name="doze_proximity_check_before_pulse_intent">true</bool>
 
     <!-- Doze: pulse parameter - delay to wait for the screen to wake up after an intent -->
@@ -53,15 +53,11 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
     <!-- The CPU temperature divider, if needed -->
     <integer name="config_cpuTempDivider" translatable="false">10</integer>
-    <!-- If not zero, limits the internal screen recorder's framerate to the set value. -->
+    <!-- If not zero, limit the internal screen recorder's framerate to the set value. -->
     <integer name="config_screenRecorderMaxFramerate">60</integer>
-    <!-- The default tiles to display in QuickSettings -->
-    <string name="quick_settings_tiles_default" translatable="false">
-        wifi,cell,bt,dnd,flashlight,rotation,battery,airplane,night,nfc,location
-    </string>
 
-    <!-- Whether the combined qs shows in status bar when true, the combined qs will not be available
-         if set it to false  -->
+    <!-- Whether the combined qs show in status bar when true, the combined qs will not be available
+         If set it to false  -->
     <bool name="flag_combined_qs_headers">false</bool>
 
 </resources>
